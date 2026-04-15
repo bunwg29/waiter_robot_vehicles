@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/bun29/waiter_robot_ws/build/waiter_msgs/rosidl_generator_py/waiter_msgs/waiter_msgs_s__rosidl_typesupport_c.so" "TARGETS" "waiter_msgs_s__rosidl_typesupport_c" "DESTINATION" "lib/python3.12/site-packages/waiter_msgs")

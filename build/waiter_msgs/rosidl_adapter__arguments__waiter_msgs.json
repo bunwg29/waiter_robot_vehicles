@@ -1,0 +1,7 @@
+{
+  "package_name": "waiter_msgs",
+  "non_idl_tuples": [
+    "/home/bun29/waiter_robot_ws/src/waiter_msgs:msg/Order.msg",
+    "/home/bun29/waiter_robot_ws/src/waiter_msgs:action/DeliverOrder.action"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "waiter_msgs__py",
+		"source" : "/home/bun29/waiter_robot_ws/build/waiter_msgs/waiter_msgs__py"
+	}
+}

@@ -1,0 +1,25 @@
+waypoints:
+  - name: kitchen_exit
+    x: 2.5
+    y: 0.0
+    yaw: 0.0
+  - name: west_center
+    x: 2.5
+    y: 1.5
+    yaw: 1.57
+  - name: north_service_lane
+    x: 4.0
+    y: 1.5
+    yaw: 0.0
+  - name: east_north
+    x: 4.0
+    y: -1.5
+    yaw: -1.57
+  - name: east_south
+    x: 1.0
+    y: -1.5
+    yaw: 3.14
+  - name: south_return
+    x: 0.0
+    y: 0.0
+    yaw: 0.0

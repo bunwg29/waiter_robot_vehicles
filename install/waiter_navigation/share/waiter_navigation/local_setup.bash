@@ -1,0 +1,1 @@
+/home/bun29/waiter_robot_ws/build/waiter_navigation/ament_cmake_environment_hooks/local_setup.bash

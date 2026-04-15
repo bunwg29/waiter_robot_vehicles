@@ -1,0 +1,16 @@
+{
+  "package_name": "waiter_msgs",
+  "output_dir": "/home/bun29/waiter_robot_ws/build/waiter_msgs/rosidl_generator_type_description/waiter_msgs",
+  "idl_tuples": [
+    "/home/bun29/waiter_robot_ws/build/waiter_msgs/rosidl_adapter/waiter_msgs:msg/Order.idl",
+    "/home/bun29/waiter_robot_ws/build/waiter_msgs/rosidl_adapter/waiter_msgs:action/DeliverOrder.idl"
+  ],
+  "include_paths": [
+    "std_msgs:/opt/ros/jazzy/share/std_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces",
+    "geometry_msgs:/opt/ros/jazzy/share/geometry_msgs",
+    "action_msgs:/opt/ros/jazzy/share/action_msgs",
+    "unique_identifier_msgs:/opt/ros/jazzy/share/unique_identifier_msgs",
+    "service_msgs:/opt/ros/jazzy/share/service_msgs"
+  ]
+}
