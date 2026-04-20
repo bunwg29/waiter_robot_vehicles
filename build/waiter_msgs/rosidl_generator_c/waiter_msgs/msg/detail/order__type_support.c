@@ -4,9 +4,9 @@
 
 #include <string.h>
 
+#include "waiter_msgs/msg/detail/order__functions.h"
 #include "waiter_msgs/msg/detail/order__type_support.h"
 #include "rosidl_typesupport_interface/macros.h"
-#include "waiter_msgs/msg/detail/order__functions.h"
 #include "waiter_msgs/msg/detail/order__struct.h"
 
 #ifdef __cplusplus

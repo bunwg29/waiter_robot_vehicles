@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bun29/waiter_robot_ws/src/waiter_msgs
+CMAKE_SOURCE_DIR = /home/quanghuy/waiter_robot_vehicles/src/waiter_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bun29/waiter_robot_ws/build/waiter_msgs
+CMAKE_BINARY_DIR = /home/quanghuy/waiter_robot_vehicles/build/waiter_msgs
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bun29/waiter_robot_ws/build/waiter_msgs/CMakeFiles /home/bun29/waiter_robot_ws/build/waiter_msgs//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/quanghuy/waiter_robot_vehicles/build/waiter_msgs/CMakeFiles /home/quanghuy/waiter_robot_vehicles/build/waiter_msgs//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bun29/waiter_robot_ws/build/waiter_msgs/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/quanghuy/waiter_robot_vehicles/build/waiter_msgs/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -415,8 +415,21 @@ waiter_msgs__py: cmake_check_build_system
 
 # fast build rule for target.
 waiter_msgs__py/fast:
-	$(MAKE) $(MAKESILENT) -f /home/bun29/waiter_robot_ws/build/waiter_msgs/waiter_msgs__py/CMakeFiles/waiter_msgs__py.dir/build.make /home/bun29/waiter_robot_ws/build/waiter_msgs/waiter_msgs__py/CMakeFiles/waiter_msgs__py.dir/build
+	$(MAKE) $(MAKESILENT) -f /home/quanghuy/waiter_robot_vehicles/build/waiter_msgs/waiter_msgs__py/CMakeFiles/waiter_msgs__py.dir/build.make /home/quanghuy/waiter_robot_vehicles/build/waiter_msgs/waiter_msgs__py/CMakeFiles/waiter_msgs__py.dir/build
 .PHONY : waiter_msgs__py/fast
+
+#=============================================================================
+# Target rules for targets named waiter_msgs__rs
+
+# Build rule for target.
+waiter_msgs__rs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 waiter_msgs__rs
+.PHONY : waiter_msgs__rs
+
+# fast build rule for target.
+waiter_msgs__rs/fast:
+	$(MAKE) $(MAKESILENT) -f /home/quanghuy/waiter_robot_vehicles/build/waiter_msgs/waiter_msgs__rs/CMakeFiles/waiter_msgs__rs.dir/build.make /home/quanghuy/waiter_robot_vehicles/build/waiter_msgs/waiter_msgs__rs/CMakeFiles/waiter_msgs__rs.dir/build
+.PHONY : waiter_msgs__rs/fast
 
 rosidl_generator_c/waiter_msgs/action/detail/deliver_order__description.o: rosidl_generator_c/waiter_msgs/action/detail/deliver_order__description.c.o
 .PHONY : rosidl_generator_c/waiter_msgs/action/detail/deliver_order__description.o
@@ -990,6 +1003,7 @@ help:
 	@echo "... waiter_msgs__cpp"
 	@echo "... waiter_msgs__py"
 	@echo "... waiter_msgs__rosidl_generator_type_description"
+	@echo "... waiter_msgs__rs"
 	@echo "... waiter_msgs_uninstall"
 	@echo "... waiter_msgs__rosidl_generator_c"
 	@echo "... waiter_msgs__rosidl_generator_py"

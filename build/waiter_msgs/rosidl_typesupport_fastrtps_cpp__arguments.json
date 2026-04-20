@@ -1,10 +1,10 @@
 {
   "package_name": "waiter_msgs",
-  "output_dir": "/home/bun29/waiter_robot_ws/build/waiter_msgs/rosidl_typesupport_fastrtps_cpp/waiter_msgs",
+  "output_dir": "/home/quanghuy/waiter_robot_vehicles/build/waiter_msgs/rosidl_typesupport_fastrtps_cpp/waiter_msgs",
   "template_dir": "/opt/ros/jazzy/share/rosidl_typesupport_fastrtps_cpp/resource",
   "idl_tuples": [
-    "/home/bun29/waiter_robot_ws/build/waiter_msgs/rosidl_adapter/waiter_msgs:msg/Order.idl",
-    "/home/bun29/waiter_robot_ws/build/waiter_msgs/rosidl_adapter/waiter_msgs:action/DeliverOrder.idl"
+    "/home/quanghuy/waiter_robot_vehicles/build/waiter_msgs/rosidl_adapter/waiter_msgs:msg/Order.idl",
+    "/home/quanghuy/waiter_robot_vehicles/build/waiter_msgs/rosidl_adapter/waiter_msgs:action/DeliverOrder.idl"
   ],
   "ros_interface_dependencies": [
     "std_msgs:/opt/ros/jazzy/share/std_msgs/msg/Bool.idl",
@@ -87,8 +87,8 @@
     "/opt/ros/jazzy/share/rosidl_typesupport_fastrtps_cpp/resource/msg__type_support.cpp.em",
     "/opt/ros/jazzy/share/rosidl_typesupport_fastrtps_cpp/resource/srv__rosidl_typesupport_fastrtps_cpp.hpp.em",
     "/opt/ros/jazzy/share/rosidl_typesupport_fastrtps_cpp/resource/srv__type_support.cpp.em",
-    "/home/bun29/waiter_robot_ws/build/waiter_msgs/rosidl_adapter/waiter_msgs/msg/Order.idl",
-    "/home/bun29/waiter_robot_ws/build/waiter_msgs/rosidl_adapter/waiter_msgs/action/DeliverOrder.idl",
+    "/home/quanghuy/waiter_robot_vehicles/build/waiter_msgs/rosidl_adapter/waiter_msgs/msg/Order.idl",
+    "/home/quanghuy/waiter_robot_vehicles/build/waiter_msgs/rosidl_adapter/waiter_msgs/action/DeliverOrder.idl",
     "/opt/ros/jazzy/share/std_msgs/msg/Bool.idl",
     "/opt/ros/jazzy/share/std_msgs/msg/Byte.idl",
     "/opt/ros/jazzy/share/std_msgs/msg/ByteMultiArray.idl",

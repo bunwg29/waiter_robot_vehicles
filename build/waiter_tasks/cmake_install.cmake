@@ -1,8 +1,8 @@
-# Install script for directory: /home/bun29/waiter_robot_ws/src/waiter_tasks
+# Install script for directory: /home/quanghuy/waiter_robot_vehicles/src/waiter_tasks
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/bun29/waiter_robot_ws/install/waiter_tasks")
+  set(CMAKE_INSTALL_PREFIX "/home/quanghuy/waiter_robot_vehicles/install/waiter_tasks")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,7 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/bun29/waiter_robot_ws/build/waiter_tasks/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/home/quanghuy/waiter_robot_vehicles/build/waiter_tasks/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -54,5 +54,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/bun29/waiter_robot_ws/build/waiter_tasks/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/quanghuy/waiter_robot_vehicles/build/waiter_tasks/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,8 +1,8 @@
-# Install script for directory: /home/bun29/waiter_robot_ws/build/waiter_msgs/waiter_msgs__py
+# Install script for directory: /home/quanghuy/waiter_robot_vehicles/build/waiter_msgs/waiter_msgs__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/bun29/waiter_robot_ws/install/waiter_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/quanghuy/waiter_robot_vehicles/install/waiter_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

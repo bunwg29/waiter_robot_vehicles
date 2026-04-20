@@ -1,1 +1,1 @@
-/home/bun29/waiter_robot_ws/build/waiter_simulation/ament_cmake_environment_hooks/local_setup.bash
+/home/quanghuy/waiter_robot_vehicles/build/waiter_simulation/ament_cmake_environment_hooks/local_setup.bash

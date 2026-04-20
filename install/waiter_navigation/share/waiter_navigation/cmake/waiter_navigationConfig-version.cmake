@@ -1,1 +1,1 @@
-/home/bun29/waiter_robot_ws/build/waiter_navigation/ament_cmake_core/waiter_navigationConfig-version.cmake
+/home/quanghuy/waiter_robot_vehicles/build/waiter_navigation/ament_cmake_core/waiter_navigationConfig-version.cmake

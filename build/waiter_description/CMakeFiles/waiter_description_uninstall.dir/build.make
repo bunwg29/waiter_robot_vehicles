@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bun29/waiter_robot_ws/src/waiter_description
+CMAKE_SOURCE_DIR = /home/quanghuy/waiter_robot_vehicles/src/waiter_description
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bun29/waiter_robot_ws/build/waiter_description
+CMAKE_BINARY_DIR = /home/quanghuy/waiter_robot_vehicles/build/waiter_description
 
 # Utility rule file for waiter_description_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/waiter_description_uninstall.dir/compiler_depend.make
 include CMakeFiles/waiter_description_uninstall.dir/progress.make
 
 CMakeFiles/waiter_description_uninstall:
-	/usr/bin/cmake -P /home/bun29/waiter_robot_ws/build/waiter_description/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/quanghuy/waiter_robot_vehicles/build/waiter_description/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 waiter_description_uninstall: CMakeFiles/waiter_description_uninstall
 waiter_description_uninstall: CMakeFiles/waiter_description_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/waiter_description_uninstall.dir/clean:
 .PHONY : CMakeFiles/waiter_description_uninstall.dir/clean
 
 CMakeFiles/waiter_description_uninstall.dir/depend:
-	cd /home/bun29/waiter_robot_ws/build/waiter_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bun29/waiter_robot_ws/src/waiter_description /home/bun29/waiter_robot_ws/src/waiter_description /home/bun29/waiter_robot_ws/build/waiter_description /home/bun29/waiter_robot_ws/build/waiter_description /home/bun29/waiter_robot_ws/build/waiter_description/CMakeFiles/waiter_description_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/quanghuy/waiter_robot_vehicles/build/waiter_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/quanghuy/waiter_robot_vehicles/src/waiter_description /home/quanghuy/waiter_robot_vehicles/src/waiter_description /home/quanghuy/waiter_robot_vehicles/build/waiter_description /home/quanghuy/waiter_robot_vehicles/build/waiter_description /home/quanghuy/waiter_robot_vehicles/build/waiter_description/CMakeFiles/waiter_description_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/waiter_description_uninstall.dir/depend
 

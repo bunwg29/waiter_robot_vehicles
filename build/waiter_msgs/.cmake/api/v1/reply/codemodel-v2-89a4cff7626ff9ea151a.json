@@ -1,0 +1,267 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-14c18dd1bfb2060df177.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						16,
+						17,
+						18,
+						19
+					]
+				},
+				{
+					"build" : "waiter_msgs__py",
+					"jsonFile" : "directory-waiter_msgs__py-2627f766fa41d7d090cc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/quanghuy/waiter_robot_vehicles/build/waiter_msgs/waiter_msgs__py",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "waiter_msgs__rs",
+					"jsonFile" : "directory-waiter_msgs__rs-575de508da996c4b5055.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/quanghuy/waiter_robot_vehicles/build/waiter_msgs/waiter_msgs__rs",
+					"targetIndexes" : 
+					[
+						15
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "waiter_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_waiter_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_waiter_msgs_egg-974e76f7ccde855fe6f9.json",
+					"name" : "ament_cmake_python_build_waiter_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_waiter_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_waiter_msgs-d1375494df734227840d.json",
+					"name" : "ament_cmake_python_symlink_waiter_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-87663e2ebc83cb4a93cb.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "waiter_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-waiter_msgs-5e9d5b4ca251d42799b6.json",
+					"name" : "waiter_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "waiter_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-waiter_msgs__cpp-10f5cbd97949538f7b90.json",
+					"name" : "waiter_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "waiter_msgs__py::@f4b3f1e86a8adcf6550c",
+					"jsonFile" : "target-waiter_msgs__py-8ca36b8b86cbd0f353df.json",
+					"name" : "waiter_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "waiter_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-waiter_msgs__rosidl_generator_c-ce4dcd87126ec143462b.json",
+					"name" : "waiter_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "waiter_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-waiter_msgs__rosidl_generator_py-6035be4ff64b05a3aa46.json",
+					"name" : "waiter_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "waiter_msgs__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-waiter_msgs__rosidl_generator_type_description-0c17b365c2b684aba8e3.json",
+					"name" : "waiter_msgs__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "waiter_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-waiter_msgs__rosidl_typesupport_c-426ccef2e73f6e290786.json",
+					"name" : "waiter_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "waiter_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-waiter_msgs__rosidl_typesupport_cpp-a7ba81a75e6894b42b64.json",
+					"name" : "waiter_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "waiter_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-waiter_msgs__rosidl_typesupport_fastrtps_c-f0f49edbb6c2c01ae2fc.json",
+					"name" : "waiter_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "waiter_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-waiter_msgs__rosidl_typesupport_fastrtps_cpp-4ab7a2c638fc0c68c9af.json",
+					"name" : "waiter_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "waiter_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-waiter_msgs__rosidl_typesupport_introspection_c-35a706d347265bad7763.json",
+					"name" : "waiter_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "waiter_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-waiter_msgs__rosidl_typesupport_introspection_cpp-8337968456f5e838c5ca.json",
+					"name" : "waiter_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "waiter_msgs__rs::@134a294f2f33ed868e50",
+					"jsonFile" : "target-waiter_msgs__rs-725386dabf1b5d3223d8.json",
+					"name" : "waiter_msgs__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "waiter_msgs_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-waiter_msgs_s__rosidl_typesupport_c-b97990b6778d3954aff4.json",
+					"name" : "waiter_msgs_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "waiter_msgs_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-waiter_msgs_s__rosidl_typesupport_fastrtps_c-857617eeca613a986069.json",
+					"name" : "waiter_msgs_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "waiter_msgs_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-waiter_msgs_s__rosidl_typesupport_introspection_c-731da3628f0101902659.json",
+					"name" : "waiter_msgs_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "waiter_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-waiter_msgs_uninstall-d51aeb08845d3a9d8d81.json",
+					"name" : "waiter_msgs_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/quanghuy/waiter_robot_vehicles/build/waiter_msgs",
+		"source" : "/home/quanghuy/waiter_robot_vehicles/src/waiter_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

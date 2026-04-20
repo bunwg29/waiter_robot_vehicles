@@ -51,7 +51,7 @@ def generate_launch_description():
             package='ros_gz_sim',
             executable='create',
             output='screen',
-            arguments=['-name', 'waiter_robot', '-topic', 'robot_description', '-x', x, '-y', y, '-z', z, '-Y', yaw],
+            arguments=['-name', 'waiter_robot_urdf', '-topic', 'robot_description', '-x', x, '-y', y, '-z', z, '-Y', yaw],
         ),
         Node(
             package='ros_gz_bridge',

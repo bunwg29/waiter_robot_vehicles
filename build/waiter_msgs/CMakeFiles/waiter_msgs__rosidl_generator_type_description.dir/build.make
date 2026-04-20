@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bun29/waiter_robot_ws/src/waiter_msgs
+CMAKE_SOURCE_DIR = /home/quanghuy/waiter_robot_vehicles/src/waiter_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bun29/waiter_robot_ws/build/waiter_msgs
+CMAKE_BINARY_DIR = /home/quanghuy/waiter_robot_vehicles/build/waiter_msgs
 
 # Utility rule file for waiter_msgs__rosidl_generator_type_description.
 
@@ -73,8 +73,8 @@ rosidl_generator_type_description/waiter_msgs/msg/Order.json: /opt/ros/jazzy/lib
 rosidl_generator_type_description/waiter_msgs/msg/Order.json: /opt/ros/jazzy/lib/python3.12/site-packages/rosidl_generator_type_description/__init__.py
 rosidl_generator_type_description/waiter_msgs/msg/Order.json: rosidl_adapter/waiter_msgs/msg/Order.idl
 rosidl_generator_type_description/waiter_msgs/msg/Order.json: rosidl_adapter/waiter_msgs/action/DeliverOrder.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/bun29/waiter_robot_ws/build/waiter_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating type hashes for ROS interfaces"
-	/usr/bin/python3 /opt/ros/jazzy/lib/rosidl_generator_type_description/rosidl_generator_type_description --generator-arguments-file /home/bun29/waiter_robot_ws/build/waiter_msgs/rosidl_generator_type_description__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/quanghuy/waiter_robot_vehicles/build/waiter_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating type hashes for ROS interfaces"
+	/usr/bin/python3 /opt/ros/jazzy/lib/rosidl_generator_type_description/rosidl_generator_type_description --generator-arguments-file /home/quanghuy/waiter_robot_vehicles/build/waiter_msgs/rosidl_generator_type_description__arguments.json
 
 rosidl_generator_type_description/waiter_msgs/action/DeliverOrder.json: rosidl_generator_type_description/waiter_msgs/msg/Order.json
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_type_description/waiter_msgs/action/DeliverOrder.json
@@ -94,6 +94,6 @@ CMakeFiles/waiter_msgs__rosidl_generator_type_description.dir/clean:
 .PHONY : CMakeFiles/waiter_msgs__rosidl_generator_type_description.dir/clean
 
 CMakeFiles/waiter_msgs__rosidl_generator_type_description.dir/depend:
-	cd /home/bun29/waiter_robot_ws/build/waiter_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bun29/waiter_robot_ws/src/waiter_msgs /home/bun29/waiter_robot_ws/src/waiter_msgs /home/bun29/waiter_robot_ws/build/waiter_msgs /home/bun29/waiter_robot_ws/build/waiter_msgs /home/bun29/waiter_robot_ws/build/waiter_msgs/CMakeFiles/waiter_msgs__rosidl_generator_type_description.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/quanghuy/waiter_robot_vehicles/build/waiter_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/quanghuy/waiter_robot_vehicles/src/waiter_msgs /home/quanghuy/waiter_robot_vehicles/src/waiter_msgs /home/quanghuy/waiter_robot_vehicles/build/waiter_msgs /home/quanghuy/waiter_robot_vehicles/build/waiter_msgs /home/quanghuy/waiter_robot_vehicles/build/waiter_msgs/CMakeFiles/waiter_msgs__rosidl_generator_type_description.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/waiter_msgs__rosidl_generator_type_description.dir/depend
 

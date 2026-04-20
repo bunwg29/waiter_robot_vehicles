@@ -1,1 +1,1 @@
-/home/bun29/waiter_robot_ws/src/waiter_navigation/launch/slam_navigation.launch.py
+/home/quanghuy/waiter_robot_vehicles/src/waiter_navigation/launch/slam_navigation.launch.py

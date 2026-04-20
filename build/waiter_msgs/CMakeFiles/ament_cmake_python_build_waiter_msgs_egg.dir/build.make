@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bun29/waiter_robot_ws/src/waiter_msgs
+CMAKE_SOURCE_DIR = /home/quanghuy/waiter_robot_vehicles/src/waiter_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bun29/waiter_robot_ws/build/waiter_msgs
+CMAKE_BINARY_DIR = /home/quanghuy/waiter_robot_vehicles/build/waiter_msgs
 
 # Utility rule file for ament_cmake_python_build_waiter_msgs_egg.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_build_waiter_msgs_egg.dir/compiler_depend.
 include CMakeFiles/ament_cmake_python_build_waiter_msgs_egg.dir/progress.make
 
 CMakeFiles/ament_cmake_python_build_waiter_msgs_egg:
-	cd /home/bun29/waiter_robot_ws/build/waiter_msgs/ament_cmake_python/waiter_msgs && /usr/bin/python3 setup.py egg_info
+	cd /home/quanghuy/waiter_robot_vehicles/build/waiter_msgs/ament_cmake_python/waiter_msgs && /usr/bin/python3 setup.py egg_info
 
 ament_cmake_python_build_waiter_msgs_egg: CMakeFiles/ament_cmake_python_build_waiter_msgs_egg
 ament_cmake_python_build_waiter_msgs_egg: CMakeFiles/ament_cmake_python_build_waiter_msgs_egg.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_build_waiter_msgs_egg.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_build_waiter_msgs_egg.dir/clean
 
 CMakeFiles/ament_cmake_python_build_waiter_msgs_egg.dir/depend:
-	cd /home/bun29/waiter_robot_ws/build/waiter_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bun29/waiter_robot_ws/src/waiter_msgs /home/bun29/waiter_robot_ws/src/waiter_msgs /home/bun29/waiter_robot_ws/build/waiter_msgs /home/bun29/waiter_robot_ws/build/waiter_msgs /home/bun29/waiter_robot_ws/build/waiter_msgs/CMakeFiles/ament_cmake_python_build_waiter_msgs_egg.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/quanghuy/waiter_robot_vehicles/build/waiter_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/quanghuy/waiter_robot_vehicles/src/waiter_msgs /home/quanghuy/waiter_robot_vehicles/src/waiter_msgs /home/quanghuy/waiter_robot_vehicles/build/waiter_msgs /home/quanghuy/waiter_robot_vehicles/build/waiter_msgs /home/quanghuy/waiter_robot_vehicles/build/waiter_msgs/CMakeFiles/ament_cmake_python_build_waiter_msgs_egg.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/ament_cmake_python_build_waiter_msgs_egg.dir/depend
 

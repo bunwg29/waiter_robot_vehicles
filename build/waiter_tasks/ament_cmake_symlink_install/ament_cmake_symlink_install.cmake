@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/bun29/waiter_robot_ws/install/waiter_tasks/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/quanghuy/waiter_robot_vehicles/install/waiter_tasks/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -128,7 +128,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/bun29/waiter_robot_ws/install/waiter_tasks/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/quanghuy/waiter_robot_vehicles/install/waiter_tasks/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -186,7 +186,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/bun29/waiter_robot_ws/install/waiter_tasks/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/quanghuy/waiter_robot_vehicles/install/waiter_tasks/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -256,7 +256,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/bun29/waiter_robot_ws/install/waiter_tasks/${destination}")
+      set(destination "/home/quanghuy/waiter_robot_vehicles/install/waiter_tasks/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -316,49 +316,49 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install(PROGRAMS "scripts/order_dispatcher.py" "scripts/auto_mapper.py" "DESTINATION" "lib/waiter_tasks")
-ament_cmake_symlink_install_programs("/home/bun29/waiter_robot_ws/src/waiter_tasks" PROGRAMS "scripts/order_dispatcher.py" "scripts/auto_mapper.py" "DESTINATION" "lib/waiter_tasks")
+ament_cmake_symlink_install_programs("/home/quanghuy/waiter_robot_vehicles/src/waiter_tasks" PROGRAMS "scripts/order_dispatcher.py" "scripts/auto_mapper.py" "DESTINATION" "lib/waiter_tasks")
 
 # install(DIRECTORY "launch" "config" "DESTINATION" "share/waiter_tasks")
-ament_cmake_symlink_install_directory("/home/bun29/waiter_robot_ws/src/waiter_tasks" DIRECTORY "launch" "config" "DESTINATION" "share/waiter_tasks")
+ament_cmake_symlink_install_directory("/home/quanghuy/waiter_robot_vehicles/src/waiter_tasks" DIRECTORY "launch" "config" "DESTINATION" "share/waiter_tasks")
 
-# install(FILES "/home/bun29/waiter_robot_ws/build/waiter_tasks/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/waiter_tasks" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/bun29/waiter_robot_ws/src/waiter_tasks" FILES "/home/bun29/waiter_robot_ws/build/waiter_tasks/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/waiter_tasks" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/quanghuy/waiter_robot_vehicles/build/waiter_tasks/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/waiter_tasks" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/quanghuy/waiter_robot_vehicles/src/waiter_tasks" FILES "/home/quanghuy/waiter_robot_vehicles/build/waiter_tasks/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/waiter_tasks" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/bun29/waiter_robot_ws/build/waiter_tasks/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/waiter_tasks" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/bun29/waiter_robot_ws/src/waiter_tasks" FILES "/home/bun29/waiter_robot_ws/build/waiter_tasks/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/waiter_tasks" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/quanghuy/waiter_robot_vehicles/build/waiter_tasks/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/waiter_tasks" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/quanghuy/waiter_robot_vehicles/src/waiter_tasks" FILES "/home/quanghuy/waiter_robot_vehicles/build/waiter_tasks/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/waiter_tasks" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/waiter_tasks/environment")
-ament_cmake_symlink_install_files("/home/bun29/waiter_robot_ws/src/waiter_tasks" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/waiter_tasks/environment")
+ament_cmake_symlink_install_files("/home/quanghuy/waiter_robot_vehicles/src/waiter_tasks" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/waiter_tasks/environment")
 
-# install(FILES "/home/bun29/waiter_robot_ws/build/waiter_tasks/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/waiter_tasks/environment")
-ament_cmake_symlink_install_files("/home/bun29/waiter_robot_ws/src/waiter_tasks" FILES "/home/bun29/waiter_robot_ws/build/waiter_tasks/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/waiter_tasks/environment")
+# install(FILES "/home/quanghuy/waiter_robot_vehicles/build/waiter_tasks/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/waiter_tasks/environment")
+ament_cmake_symlink_install_files("/home/quanghuy/waiter_robot_vehicles/src/waiter_tasks" FILES "/home/quanghuy/waiter_robot_vehicles/build/waiter_tasks/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/waiter_tasks/environment")
 
 # install(FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/waiter_tasks/environment")
-ament_cmake_symlink_install_files("/home/bun29/waiter_robot_ws/src/waiter_tasks" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/waiter_tasks/environment")
+ament_cmake_symlink_install_files("/home/quanghuy/waiter_robot_vehicles/src/waiter_tasks" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/waiter_tasks/environment")
 
-# install(FILES "/home/bun29/waiter_robot_ws/build/waiter_tasks/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/waiter_tasks/environment")
-ament_cmake_symlink_install_files("/home/bun29/waiter_robot_ws/src/waiter_tasks" FILES "/home/bun29/waiter_robot_ws/build/waiter_tasks/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/waiter_tasks/environment")
+# install(FILES "/home/quanghuy/waiter_robot_vehicles/build/waiter_tasks/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/waiter_tasks/environment")
+ament_cmake_symlink_install_files("/home/quanghuy/waiter_robot_vehicles/src/waiter_tasks" FILES "/home/quanghuy/waiter_robot_vehicles/build/waiter_tasks/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/waiter_tasks/environment")
 
-# install(FILES "/home/bun29/waiter_robot_ws/build/waiter_tasks/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/waiter_tasks")
-ament_cmake_symlink_install_files("/home/bun29/waiter_robot_ws/src/waiter_tasks" FILES "/home/bun29/waiter_robot_ws/build/waiter_tasks/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/waiter_tasks")
+# install(FILES "/home/quanghuy/waiter_robot_vehicles/build/waiter_tasks/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/waiter_tasks")
+ament_cmake_symlink_install_files("/home/quanghuy/waiter_robot_vehicles/src/waiter_tasks" FILES "/home/quanghuy/waiter_robot_vehicles/build/waiter_tasks/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/waiter_tasks")
 
-# install(FILES "/home/bun29/waiter_robot_ws/build/waiter_tasks/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/waiter_tasks")
-ament_cmake_symlink_install_files("/home/bun29/waiter_robot_ws/src/waiter_tasks" FILES "/home/bun29/waiter_robot_ws/build/waiter_tasks/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/waiter_tasks")
+# install(FILES "/home/quanghuy/waiter_robot_vehicles/build/waiter_tasks/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/waiter_tasks")
+ament_cmake_symlink_install_files("/home/quanghuy/waiter_robot_vehicles/src/waiter_tasks" FILES "/home/quanghuy/waiter_robot_vehicles/build/waiter_tasks/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/waiter_tasks")
 
-# install(FILES "/home/bun29/waiter_robot_ws/build/waiter_tasks/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/waiter_tasks")
-ament_cmake_symlink_install_files("/home/bun29/waiter_robot_ws/src/waiter_tasks" FILES "/home/bun29/waiter_robot_ws/build/waiter_tasks/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/waiter_tasks")
+# install(FILES "/home/quanghuy/waiter_robot_vehicles/build/waiter_tasks/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/waiter_tasks")
+ament_cmake_symlink_install_files("/home/quanghuy/waiter_robot_vehicles/src/waiter_tasks" FILES "/home/quanghuy/waiter_robot_vehicles/build/waiter_tasks/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/waiter_tasks")
 
-# install(FILES "/home/bun29/waiter_robot_ws/build/waiter_tasks/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/waiter_tasks")
-ament_cmake_symlink_install_files("/home/bun29/waiter_robot_ws/src/waiter_tasks" FILES "/home/bun29/waiter_robot_ws/build/waiter_tasks/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/waiter_tasks")
+# install(FILES "/home/quanghuy/waiter_robot_vehicles/build/waiter_tasks/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/waiter_tasks")
+ament_cmake_symlink_install_files("/home/quanghuy/waiter_robot_vehicles/src/waiter_tasks" FILES "/home/quanghuy/waiter_robot_vehicles/build/waiter_tasks/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/waiter_tasks")
 
-# install(FILES "/home/bun29/waiter_robot_ws/build/waiter_tasks/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/waiter_tasks")
-ament_cmake_symlink_install_files("/home/bun29/waiter_robot_ws/src/waiter_tasks" FILES "/home/bun29/waiter_robot_ws/build/waiter_tasks/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/waiter_tasks")
+# install(FILES "/home/quanghuy/waiter_robot_vehicles/build/waiter_tasks/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/waiter_tasks")
+ament_cmake_symlink_install_files("/home/quanghuy/waiter_robot_vehicles/src/waiter_tasks" FILES "/home/quanghuy/waiter_robot_vehicles/build/waiter_tasks/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/waiter_tasks")
 
-# install(FILES "/home/bun29/waiter_robot_ws/build/waiter_tasks/ament_cmake_index/share/ament_index/resource_index/packages/waiter_tasks" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/bun29/waiter_robot_ws/src/waiter_tasks" FILES "/home/bun29/waiter_robot_ws/build/waiter_tasks/ament_cmake_index/share/ament_index/resource_index/packages/waiter_tasks" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/quanghuy/waiter_robot_vehicles/build/waiter_tasks/ament_cmake_index/share/ament_index/resource_index/packages/waiter_tasks" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/quanghuy/waiter_robot_vehicles/src/waiter_tasks" FILES "/home/quanghuy/waiter_robot_vehicles/build/waiter_tasks/ament_cmake_index/share/ament_index/resource_index/packages/waiter_tasks" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/bun29/waiter_robot_ws/build/waiter_tasks/ament_cmake_core/waiter_tasksConfig.cmake" "/home/bun29/waiter_robot_ws/build/waiter_tasks/ament_cmake_core/waiter_tasksConfig-version.cmake" "DESTINATION" "share/waiter_tasks/cmake")
-ament_cmake_symlink_install_files("/home/bun29/waiter_robot_ws/src/waiter_tasks" FILES "/home/bun29/waiter_robot_ws/build/waiter_tasks/ament_cmake_core/waiter_tasksConfig.cmake" "/home/bun29/waiter_robot_ws/build/waiter_tasks/ament_cmake_core/waiter_tasksConfig-version.cmake" "DESTINATION" "share/waiter_tasks/cmake")
+# install(FILES "/home/quanghuy/waiter_robot_vehicles/build/waiter_tasks/ament_cmake_core/waiter_tasksConfig.cmake" "/home/quanghuy/waiter_robot_vehicles/build/waiter_tasks/ament_cmake_core/waiter_tasksConfig-version.cmake" "DESTINATION" "share/waiter_tasks/cmake")
+ament_cmake_symlink_install_files("/home/quanghuy/waiter_robot_vehicles/src/waiter_tasks" FILES "/home/quanghuy/waiter_robot_vehicles/build/waiter_tasks/ament_cmake_core/waiter_tasksConfig.cmake" "/home/quanghuy/waiter_robot_vehicles/build/waiter_tasks/ament_cmake_core/waiter_tasksConfig-version.cmake" "DESTINATION" "share/waiter_tasks/cmake")
 
-# install(FILES "/home/bun29/waiter_robot_ws/src/waiter_tasks/package.xml" "DESTINATION" "share/waiter_tasks")
-ament_cmake_symlink_install_files("/home/bun29/waiter_robot_ws/src/waiter_tasks" FILES "/home/bun29/waiter_robot_ws/src/waiter_tasks/package.xml" "DESTINATION" "share/waiter_tasks")
+# install(FILES "/home/quanghuy/waiter_robot_vehicles/src/waiter_tasks/package.xml" "DESTINATION" "share/waiter_tasks")
+ament_cmake_symlink_install_files("/home/quanghuy/waiter_robot_vehicles/src/waiter_tasks" FILES "/home/quanghuy/waiter_robot_vehicles/src/waiter_tasks/package.xml" "DESTINATION" "share/waiter_tasks")

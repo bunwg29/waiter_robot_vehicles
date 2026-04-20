@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bun29/waiter_robot_ws/src/waiter_simulation
+CMAKE_SOURCE_DIR = /home/quanghuy/waiter_robot_vehicles/src/waiter_simulation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bun29/waiter_robot_ws/build/waiter_simulation
+CMAKE_BINARY_DIR = /home/quanghuy/waiter_robot_vehicles/build/waiter_simulation
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/bun29/waiter_robot_ws/build/waiter_simulation && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bun29/waiter_robot_ws/src/waiter_simulation /home/bun29/waiter_robot_ws/src/waiter_simulation /home/bun29/waiter_robot_ws/build/waiter_simulation /home/bun29/waiter_robot_ws/build/waiter_simulation /home/bun29/waiter_robot_ws/build/waiter_simulation/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/quanghuy/waiter_robot_vehicles/build/waiter_simulation && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/quanghuy/waiter_robot_vehicles/src/waiter_simulation /home/quanghuy/waiter_robot_vehicles/src/waiter_simulation /home/quanghuy/waiter_robot_vehicles/build/waiter_simulation /home/quanghuy/waiter_robot_vehicles/build/waiter_simulation /home/quanghuy/waiter_robot_vehicles/build/waiter_simulation/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/uninstall.dir/depend
 

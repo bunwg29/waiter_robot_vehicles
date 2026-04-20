@@ -1,13 +1,13 @@
 file(REMOVE_RECURSE
-  "/home/bun29/waiter_robot_ws/build/waiter_msgs/rosidl_generator_py/waiter_msgs/_waiter_msgs_s.ep.rosidl_typesupport_c.c"
-  "/home/bun29/waiter_robot_ws/build/waiter_msgs/rosidl_generator_py/waiter_msgs/_waiter_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
-  "/home/bun29/waiter_robot_ws/build/waiter_msgs/rosidl_generator_py/waiter_msgs/_waiter_msgs_s.ep.rosidl_typesupport_introspection_c.c"
-  "/home/bun29/waiter_robot_ws/build/waiter_msgs/rosidl_generator_py/waiter_msgs/action/__init__.py"
-  "/home/bun29/waiter_robot_ws/build/waiter_msgs/rosidl_generator_py/waiter_msgs/action/_deliver_order.py"
-  "/home/bun29/waiter_robot_ws/build/waiter_msgs/rosidl_generator_py/waiter_msgs/action/_deliver_order_s.c"
-  "/home/bun29/waiter_robot_ws/build/waiter_msgs/rosidl_generator_py/waiter_msgs/msg/__init__.py"
-  "/home/bun29/waiter_robot_ws/build/waiter_msgs/rosidl_generator_py/waiter_msgs/msg/_order.py"
-  "/home/bun29/waiter_robot_ws/build/waiter_msgs/rosidl_generator_py/waiter_msgs/msg/_order_s.c"
+  "/home/quanghuy/waiter_robot_vehicles/build/waiter_msgs/rosidl_generator_py/waiter_msgs/_waiter_msgs_s.ep.rosidl_typesupport_c.c"
+  "/home/quanghuy/waiter_robot_vehicles/build/waiter_msgs/rosidl_generator_py/waiter_msgs/_waiter_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/quanghuy/waiter_robot_vehicles/build/waiter_msgs/rosidl_generator_py/waiter_msgs/_waiter_msgs_s.ep.rosidl_typesupport_introspection_c.c"
+  "/home/quanghuy/waiter_robot_vehicles/build/waiter_msgs/rosidl_generator_py/waiter_msgs/action/__init__.py"
+  "/home/quanghuy/waiter_robot_vehicles/build/waiter_msgs/rosidl_generator_py/waiter_msgs/action/_deliver_order.py"
+  "/home/quanghuy/waiter_robot_vehicles/build/waiter_msgs/rosidl_generator_py/waiter_msgs/action/_deliver_order_s.c"
+  "/home/quanghuy/waiter_robot_vehicles/build/waiter_msgs/rosidl_generator_py/waiter_msgs/msg/__init__.py"
+  "/home/quanghuy/waiter_robot_vehicles/build/waiter_msgs/rosidl_generator_py/waiter_msgs/msg/_order.py"
+  "/home/quanghuy/waiter_robot_vehicles/build/waiter_msgs/rosidl_generator_py/waiter_msgs/msg/_order_s.c"
   "CMakeFiles/waiter_msgs__py"
 )
 

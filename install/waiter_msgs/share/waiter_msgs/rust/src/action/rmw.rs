@@ -1,0 +1,1 @@
+/home/quanghuy/waiter_robot_vehicles/build/waiter_msgs/rosidl_generator_rs/waiter_msgs/rust/src/action/rmw.rs

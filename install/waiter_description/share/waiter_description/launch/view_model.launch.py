@@ -1,1 +1,1 @@
-/home/bun29/waiter_robot_ws/src/waiter_description/launch/view_model.launch.py
+/home/quanghuy/waiter_robot_vehicles/src/waiter_description/launch/view_model.launch.py

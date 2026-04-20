@@ -1,1 +1,1 @@
-/home/bun29/waiter_robot_ws/build/waiter_description/ament_cmake_core/waiter_descriptionConfig-version.cmake
+/home/quanghuy/waiter_robot_vehicles/build/waiter_description/ament_cmake_core/waiter_descriptionConfig-version.cmake

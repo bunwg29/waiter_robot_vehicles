@@ -5,8 +5,8 @@
 #include <string.h>
 
 #include "waiter_msgs/action/detail/deliver_order__type_support.h"
-#include "rosidl_typesupport_interface/macros.h"
 #include "waiter_msgs/action/detail/deliver_order__functions.h"
+#include "rosidl_typesupport_interface/macros.h"
 #include "waiter_msgs/action/detail/deliver_order__struct.h"
 
 #ifdef __cplusplus

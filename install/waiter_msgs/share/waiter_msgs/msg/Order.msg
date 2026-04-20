@@ -1,1 +1,1 @@
-/home/bun29/waiter_robot_ws/src/waiter_msgs/msg/Order.msg
+/home/quanghuy/waiter_robot_vehicles/src/waiter_msgs/msg/Order.msg
