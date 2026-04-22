@@ -1,1 +1,0 @@
-/home/quanghuy/waiter_robot_vehicles/src/waiter_simulation/launch/gazebo.launch.py

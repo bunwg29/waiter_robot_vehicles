@@ -1,1 +1,0 @@
-/home/quanghuy/waiter_robot_vehicles/build/waiter_msgs/ament_cmake_core/waiter_msgsConfig.cmake

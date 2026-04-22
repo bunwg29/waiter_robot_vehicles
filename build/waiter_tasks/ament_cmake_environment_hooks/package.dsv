@@ -1,4 +1,0 @@
-source;share/waiter_tasks/local_setup.bash
-source;share/waiter_tasks/local_setup.dsv
-source;share/waiter_tasks/local_setup.sh
-source;share/waiter_tasks/local_setup.zsh

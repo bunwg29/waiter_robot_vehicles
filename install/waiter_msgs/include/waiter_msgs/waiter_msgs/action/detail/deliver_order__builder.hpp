@@ -1,1 +1,0 @@
-/home/quanghuy/waiter_robot_vehicles/build/waiter_msgs/rosidl_generator_cpp/waiter_msgs/action/detail/deliver_order__builder.hpp

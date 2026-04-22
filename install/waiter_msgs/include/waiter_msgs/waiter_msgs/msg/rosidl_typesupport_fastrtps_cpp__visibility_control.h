@@ -1,1 +1,0 @@
-/home/quanghuy/waiter_robot_vehicles/build/waiter_msgs/rosidl_typesupport_fastrtps_cpp/waiter_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h

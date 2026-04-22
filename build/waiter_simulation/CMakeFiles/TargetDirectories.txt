@@ -1,9 +1,0 @@
-/home/quanghuy/waiter_robot_vehicles/build/waiter_simulation/CMakeFiles/uninstall.dir
-/home/quanghuy/waiter_robot_vehicles/build/waiter_simulation/CMakeFiles/waiter_simulation_uninstall.dir
-/home/quanghuy/waiter_robot_vehicles/build/waiter_simulation/CMakeFiles/test.dir
-/home/quanghuy/waiter_robot_vehicles/build/waiter_simulation/CMakeFiles/edit_cache.dir
-/home/quanghuy/waiter_robot_vehicles/build/waiter_simulation/CMakeFiles/rebuild_cache.dir
-/home/quanghuy/waiter_robot_vehicles/build/waiter_simulation/CMakeFiles/list_install_components.dir
-/home/quanghuy/waiter_robot_vehicles/build/waiter_simulation/CMakeFiles/install.dir
-/home/quanghuy/waiter_robot_vehicles/build/waiter_simulation/CMakeFiles/install/local.dir
-/home/quanghuy/waiter_robot_vehicles/build/waiter_simulation/CMakeFiles/install/strip.dir

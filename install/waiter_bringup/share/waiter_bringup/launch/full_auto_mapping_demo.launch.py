@@ -1,1 +1,0 @@
-/home/quanghuy/waiter_robot_vehicles/src/waiter_bringup/launch/full_auto_mapping_demo.launch.py

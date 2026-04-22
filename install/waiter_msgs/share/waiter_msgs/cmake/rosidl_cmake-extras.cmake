@@ -1,1 +1,0 @@
-/home/quanghuy/waiter_robot_vehicles/build/waiter_msgs/rosidl_cmake/rosidl_cmake-extras.cmake

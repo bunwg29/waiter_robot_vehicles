@@ -1,1 +1,0 @@
-/home/quanghuy/waiter_robot_vehicles/build/waiter_msgs/rosidl_typesupport_introspection_cpp/waiter_msgs/action/detail/deliver_order__rosidl_typesupport_introspection_cpp.hpp

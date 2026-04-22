@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/quanghuy/waiter_robot_vehicles/build/waiter_msgs/rosidl_generator_py/waiter_msgs/waiter_msgs_s__rosidl_typesupport_fastrtps_c.so" "TARGETS" "waiter_msgs_s__rosidl_typesupport_fastrtps_c" "DESTINATION" "lib/python3.12/site-packages/waiter_msgs")

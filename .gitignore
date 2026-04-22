@@ -1,0 +1,86 @@
+# ROS2/Colcon build directories
+build/
+install/
+log/
+devel/
+devel_isolated/
+
+# Build artifacts
+*.o
+*.a
+*.so
+*.so.*
+*.dylib
+*.exe
+*.out
+
+# CMake
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.pyc
+__pycache__/
+*.egg-info/
+*.egg
+.mypy_cache/
+.pytest_cache/
+
+# ROS specific
+.ament_lint_manifest.txt
+*.sql
+
+# Gazebo
+.gazebo/
+.ignition/
+
+# Generated files from rosidl
+rosidl_cmake/
+
+# Python
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing
+.coverage
+.tox/
+htmlcov/
+
+# Maps and worlds (optional - keep only if large)
+# *.pgm
+# *.yaml (maps)
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# OS specific
+Thumbs.db
+.Directory

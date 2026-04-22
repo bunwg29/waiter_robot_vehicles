@@ -1,1 +1,0 @@
-/home/quanghuy/waiter_robot_vehicles/src/waiter_bringup/scripts/run_full_auto_cycle.sh

@@ -1,1 +1,0 @@
-ros_gz_sim;ros_gz_bridge;ros_gz_image;rclpy;tf2_ros;nav_msgs;geometry_msgs;xacro;robot_state_publisher;waiter_description

@@ -1,1 +1,0 @@
-/home/quanghuy/waiter_robot_vehicles/src/waiter_navigation/launch/slam_mapping.launch.py

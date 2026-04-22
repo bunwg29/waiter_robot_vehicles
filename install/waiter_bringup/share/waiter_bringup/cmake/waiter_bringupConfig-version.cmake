@@ -1,1 +1,0 @@
-/home/quanghuy/waiter_robot_vehicles/build/waiter_bringup/ament_cmake_core/waiter_bringupConfig-version.cmake
