@@ -20,8 +20,8 @@ class AutoMapper(Node):
         self.declare_parameter("pause_sec", 2.0)
         self.declare_parameter("position_tolerance", 0.22)
         self.declare_parameter("yaw_tolerance", 0.2)
-        self.declare_parameter("linear_speed", 0.18)
-        self.declare_parameter("angular_speed", 0.75)
+        self.declare_parameter("linear_speed", 0.14)
+        self.declare_parameter("angular_speed", 0.55)
         self.declare_parameter("waypoint_timeout_sec", 180.0)
 
         self.pause_sec = float(self.get_parameter("pause_sec").value)
