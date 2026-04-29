@@ -9,10 +9,9 @@
   <xacro:property name="wheel_radius" value="0.08"/>
   <xacro:property name="wheel_width" value="0.045"/>
   <xacro:property name="wheel_mass" value="1.2"/>
+  <xacro:property name="wheel_front_x_offset" value="0.14"/>
+  <xacro:property name="wheel_rear_x_offset" value="-0.14"/>
   <xacro:property name="wheel_y_offset" value="0.245"/>
-
-  <xacro:property name="caster_radius" value="0.035"/>
-  <xacro:property name="caster_mass" value="0.35"/>
 
   <xacro:property name="lidar_radius" value="0.05"/>
   <xacro:property name="lidar_height" value="0.06"/>
@@ -44,6 +43,36 @@
     </inertial>
   </xacro:macro>
 
+  <xacro:macro name="drive_wheel" params="prefix x y">
+    <link name="${prefix}_wheel_link">
+      <visual>
+        <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+        <geometry>
+          <cylinder radius="${wheel_radius}" length="${wheel_width}"/>
+        </geometry>
+        <material name="wheel_black">
+          <color rgba="0.08 0.08 0.08 1.0"/>
+        </material>
+      </visual>
+
+      <collision>
+        <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+        <geometry>
+          <cylinder radius="${wheel_radius}" length="${wheel_width}"/>
+        </geometry>
+      </collision>
+
+      <xacro:inertial_cylinder mass="${wheel_mass}" radius="${wheel_radius}" length="${wheel_width}"/>
+    </link>
+
+    <joint name="${prefix}_wheel_joint" type="continuous">
+      <parent link="base_link"/>
+      <child link="${prefix}_wheel_link"/>
+      <origin xyz="${x} ${y} ${wheel_radius}" rpy="0 0 0"/>
+      <axis xyz="0 1 0"/>
+    </joint>
+  </xacro:macro>
+
   <link name="base_link">
     <visual>
       <origin xyz="0 0 ${wheel_radius + base_height / 2.0}" rpy="0 0 0"/>
@@ -65,86 +94,10 @@
     <xacro:inertial_cylinder mass="${base_mass}" radius="${base_radius}" length="${base_height}"/>
   </link>
 
-  <link name="left_wheel_link">
-    <visual>
-      <origin xyz="0 0 0" rpy="1.5708 0 0"/>
-      <geometry>
-        <cylinder radius="${wheel_radius}" length="${wheel_width}"/>
-      </geometry>
-      <material name="wheel_black">
-        <color rgba="0.08 0.08 0.08 1.0"/>
-      </material>
-    </visual>
-
-    <collision>
-      <origin xyz="0 0 0" rpy="1.5708 0 0"/>
-      <geometry>
-        <cylinder radius="${wheel_radius}" length="${wheel_width}"/>
-      </geometry>
-    </collision>
-
-    <xacro:inertial_cylinder mass="${wheel_mass}" radius="${wheel_radius}" length="${wheel_width}"/>
-  </link>
-
-  <joint name="left_wheel_joint" type="continuous">
-    <parent link="base_link"/>
-    <child link="left_wheel_link"/>
-    <origin xyz="0 ${wheel_y_offset} ${wheel_radius}" rpy="0 0 0"/>
-    <axis xyz="0 1 0"/>
-  </joint>
-
-  <link name="right_wheel_link">
-    <visual>
-      <origin xyz="0 0 0" rpy="1.5708 0 0"/>
-      <geometry>
-        <cylinder radius="${wheel_radius}" length="${wheel_width}"/>
-      </geometry>
-      <material name="wheel_black"/>
-    </visual>
-
-    <collision>
-      <origin xyz="0 0 0" rpy="1.5708 0 0"/>
-      <geometry>
-        <cylinder radius="${wheel_radius}" length="${wheel_width}"/>
-      </geometry>
-    </collision>
-
-    <xacro:inertial_cylinder mass="${wheel_mass}" radius="${wheel_radius}" length="${wheel_width}"/>
-  </link>
-
-  <joint name="right_wheel_joint" type="continuous">
-    <parent link="base_link"/>
-    <child link="right_wheel_link"/>
-    <origin xyz="0 -${wheel_y_offset} ${wheel_radius}" rpy="0 0 0"/>
-    <axis xyz="0 1 0"/>
-  </joint>
-
-  <link name="caster_link">
-    <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <sphere radius="${caster_radius}"/>
-      </geometry>
-      <material name="caster_silver">
-        <color rgba="0.75 0.75 0.78 1.0"/>
-      </material>
-    </visual>
-
-    <collision>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <sphere radius="${caster_radius}"/>
-      </geometry>
-    </collision>
-
-    <xacro:inertial_sphere mass="${caster_mass}" radius="${caster_radius}"/>
-  </link>
-
-  <joint name="caster_joint" type="fixed">
-    <parent link="base_link"/>
-    <child link="caster_link"/>
-    <origin xyz="-${base_radius * 0.70} 0 ${caster_radius}" rpy="0 0 0"/>
-  </joint>
+  <xacro:drive_wheel prefix="front_left" x="${wheel_front_x_offset}" y="${wheel_y_offset}"/>
+  <xacro:drive_wheel prefix="rear_left" x="${wheel_rear_x_offset}" y="${wheel_y_offset}"/>
+  <xacro:drive_wheel prefix="front_right" x="${wheel_front_x_offset}" y="-${wheel_y_offset}"/>
+  <xacro:drive_wheel prefix="rear_right" x="${wheel_rear_x_offset}" y="-${wheel_y_offset}"/>
 
   <link name="lidar_link">
     <visual>
@@ -259,7 +212,7 @@
   </joint>
 
   <!-- Wheel-ground friction and contact tuning for stable turns in Gazebo -->
-  <gazebo reference="left_wheel_link">
+  <gazebo reference="front_left_wheel_link">
     <mu1>1.2</mu1>
     <mu2>1.2</mu2>
     <kp>1000000.0</kp>
@@ -267,7 +220,7 @@
     <material>Gazebo/Black</material>
   </gazebo>
 
-  <gazebo reference="right_wheel_link">
+  <gazebo reference="rear_left_wheel_link">
     <mu1>1.2</mu1>
     <mu2>1.2</mu2>
     <kp>1000000.0</kp>
@@ -275,12 +228,20 @@
     <material>Gazebo/Black</material>
   </gazebo>
 
-  <gazebo reference="caster_link">
-    <mu1>0.2</mu1>
-    <mu2>0.2</mu2>
+  <gazebo reference="front_right_wheel_link">
+    <mu1>1.2</mu1>
+    <mu2>1.2</mu2>
     <kp>1000000.0</kp>
-    <kd>1.0</kd>
-    <material>Gazebo/Grey</material>
+    <kd>10.0</kd>
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+  <gazebo reference="rear_right_wheel_link">
+    <mu1>1.2</mu1>
+    <mu2>1.2</mu2>
+    <kp>1000000.0</kp>
+    <kd>10.0</kd>
+    <material>Gazebo/Black</material>
   </gazebo>
 
   <gazebo reference="lidar_link">
@@ -291,8 +252,10 @@
     <plugin filename="gz-sim-joint-state-publisher-system" name="gz::sim::systems::JointStatePublisher"/>
 
     <plugin filename="gz-sim-diff-drive-system" name="gz::sim::systems::DiffDrive">
-      <left_joint>left_wheel_joint</left_joint>
-      <right_joint>right_wheel_joint</right_joint>
+      <left_joint>front_left_wheel_joint</left_joint>
+      <left_joint>rear_left_wheel_joint</left_joint>
+      <right_joint>front_right_wheel_joint</right_joint>
+      <right_joint>rear_right_wheel_joint</right_joint>
       <wheel_separation>${2.0 * wheel_y_offset}</wheel_separation>
       <wheel_radius>${wheel_radius}</wheel_radius>
       <topic>cmd_vel_nav</topic>
@@ -300,8 +263,8 @@
       <tf_topic>tf</tf_topic>
       <frame_id>odom</frame_id>
       <child_frame_id>base_link</child_frame_id>
-      <max_linear_acceleration>1.0</max_linear_acceleration>
-      <max_angular_acceleration>2.0</max_angular_acceleration>
+      <max_linear_acceleration>0.55</max_linear_acceleration>
+      <max_angular_acceleration>1.1</max_angular_acceleration>
     </plugin>
   </gazebo>
 
