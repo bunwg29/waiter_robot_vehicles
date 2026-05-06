@@ -1,15 +1,8 @@
 cmake_minimum_required(VERSION 3.8)
 project(waiter_bringup)
-
 find_package(ament_cmake REQUIRED)
-
-install(DIRECTORY launch config
-  DESTINATION share/${PROJECT_NAME}
-)
-
-install(PROGRAMS
-  scripts/run_full_auto_cycle.sh
-  DESTINATION lib/${PROJECT_NAME}
-)
-
+install(DIRECTORY config/ DESTINATION share/${PROJECT_NAME}/config)
+install(DIRECTORY launch/ DESTINATION share/${PROJECT_NAME}/launch)
+install(PROGRAMS scripts/waiter_node.py DESTINATION lib/${PROJECT_NAME})
+install(PROGRAMS scripts/slam_explorer.py DESTINATION lib/${PROJECT_NAME})
 ament_package()

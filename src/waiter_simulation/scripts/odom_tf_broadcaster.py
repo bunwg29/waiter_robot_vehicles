@@ -1,52 +1,42 @@
 #!/usr/bin/env python3
-
 import rclpy
 from rclpy.node import Node
 from nav_msgs.msg import Odometry
 from geometry_msgs.msg import TransformStamped
 from tf2_ros import TransformBroadcaster
 
-
 class OdomTfBroadcaster(Node):
     def __init__(self):
         super().__init__('odom_tf_broadcaster')
-        self._tf_broadcaster = TransformBroadcaster(self)
-        self._last_odom = None
-        self._subscription = self.create_subscription(
-            Odometry,
-            '/odom',
-            self._odom_callback,
-            20,
-        )
-        self._timer = self.create_timer(0.05, self._publish_transform)
+        self._br = TransformBroadcaster(self)
+        self._got_odom = False
+        self.create_subscription(Odometry, '/odom', self._on_odom, 20)
+        self._timer = self.create_timer(0.05, self._publish_identity)
 
-    def _odom_callback(self, msg: Odometry) -> None:
-        self._last_odom = msg
+    def _publish_identity(self):
+        if self._got_odom:
+            self._timer.cancel()
+            return
+        t = TransformStamped()
+        t.header.stamp = self.get_clock().now().to_msg()
+        t.header.frame_id = 'odom'
+        t.child_frame_id = 'base_footprint'
+        t.transform.rotation.w = 1.0
+        self._br.sendTransform(t)
 
-    def _publish_transform(self) -> None:
-        transform = TransformStamped()
-        transform.header.stamp = self.get_clock().now().to_msg()
-        transform.header.frame_id = 'odom'
-        transform.child_frame_id = 'base_link'
+    def _on_odom(self, msg: Odometry):
+        self._got_odom = True
+        t = TransformStamped()
+        t.header.stamp = msg.header.stamp
+        t.header.frame_id = 'odom'
+        t.child_frame_id = 'base_footprint'
+        t.transform.translation.x = msg.pose.pose.position.x
+        t.transform.translation.y = msg.pose.pose.position.y
+        t.transform.translation.z = msg.pose.pose.position.z
+        t.transform.rotation = msg.pose.pose.orientation
+        self._br.sendTransform(t)
 
-        if self._last_odom is None:
-            transform.transform.translation.x = 0.0
-            transform.transform.translation.y = 0.0
-            transform.transform.translation.z = 0.0
-            transform.transform.rotation.x = 0.0
-            transform.transform.rotation.y = 0.0
-            transform.transform.rotation.z = 0.0
-            transform.transform.rotation.w = 1.0
-        else:
-            transform.transform.translation.x = self._last_odom.pose.pose.position.x
-            transform.transform.translation.y = self._last_odom.pose.pose.position.y
-            transform.transform.translation.z = self._last_odom.pose.pose.position.z
-            transform.transform.rotation = self._last_odom.pose.pose.orientation
-
-        self._tf_broadcaster.sendTransform(transform)
-
-
-def main() -> None:
+def main():
     rclpy.init()
     node = OdomTfBroadcaster()
     try:
@@ -55,8 +45,10 @@ def main() -> None:
         pass
     finally:
         node.destroy_node()
-        rclpy.shutdown()
-
+        try:
+            rclpy.shutdown()
+        except Exception:
+            pass
 
 if __name__ == '__main__':
     main()

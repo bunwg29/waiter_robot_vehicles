@@ -1,0 +1,32 @@
+# Table and kitchen positions in the map frame
+# Coordinates are BESIDE the tables (offset ~0.7m), not on top of them
+# Robot approaches from the aisle side
+
+# Kitchen: inside the kitchen area, near the counter opening
+kitchen:
+  x: -3.0
+  y: -1.0
+  yaw: 0.0
+
+# Tables: offset positions so robot stops beside the table, not on it
+# Table 1 is at (-1.0, 1.5) in world -> approach from south side
+# Table 2 is at (2.0, 1.5) in world -> approach from south side
+# Table 3 is at (-1.0, -0.3) in world -> approach from north side
+# Table 4 is at (2.0, -0.3) in world -> approach from north side
+tables:
+  1:
+    x: -1.0
+    y: 0.6
+    yaw: 1.57
+  2:
+    x: 2.0
+    y: 0.6
+    yaw: 1.57
+  3:
+    x: -1.0
+    y: 0.6
+    yaw: -1.57
+  4:
+    x: 2.0
+    y: 0.6
+    yaw: -1.57
