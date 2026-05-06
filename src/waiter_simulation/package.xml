@@ -1,25 +1,20 @@
 <?xml version="1.0"?>
 <package format="3">
   <name>waiter_simulation</name>
-  <version>0.0.1</version>
-  <description>Gazebo simulation assets and launch files for the waiter robot.</description>
-
-  <maintainer email="student@example.com">waiter_robot_team</maintainer>
+  <version>1.0.0</version>
+  <description>Gazebo simulation world and launch for the waiter robot</description>
+  <maintainer email="bun2932005@gmail.com">Tran Ka Bun</maintainer>
+  <maintainer email="quangnpn.23itb@vku.udn.vn">Nguyen Phan Nhat Quang</maintainer>
+  <maintainer email="huynq2.23itb@vku.udn.vn">Nguyen Quang Huy</maintainer>
   <license>MIT</license>
-
   <buildtool_depend>ament_cmake</buildtool_depend>
-
   <exec_depend>ros_gz_sim</exec_depend>
   <exec_depend>ros_gz_bridge</exec_depend>
-  <exec_depend>ros_gz_image</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>xacro</exec_depend>
   <exec_depend>rclpy</exec_depend>
   <exec_depend>tf2_ros</exec_depend>
   <exec_depend>nav_msgs</exec_depend>
-  <exec_depend>geometry_msgs</exec_depend>
-  <exec_depend>xacro</exec_depend>
-  <exec_depend>robot_state_publisher</exec_depend>
-  <exec_depend>waiter_description</exec_depend>
-
   <export>
     <build_type>ament_cmake</build_type>
   </export>
