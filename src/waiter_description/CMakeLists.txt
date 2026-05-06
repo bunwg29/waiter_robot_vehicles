@@ -1,10 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
 project(waiter_description)
-
 find_package(ament_cmake REQUIRED)
-
-install(DIRECTORY urdf launch meshes
-  DESTINATION share/${PROJECT_NAME}
-)
-
+install(DIRECTORY urdf/ DESTINATION share/${PROJECT_NAME}/urdf)
 ament_package()
