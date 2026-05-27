@@ -25,7 +25,7 @@ Runs the automated food delivery sequence using the pre-built map.
 - To override the sequence and visit all tables, run:
 
 ```bash
-ros2 launch waiter_bringup demo.launch.py delivery_sequence:="1,2,3,4"
+ros2 launch waiter_bringup demo.launch.py delivery_sequence:="1,2,3,4,5,6,7,8"
 ```
 
 ### 2. Mapping Mode (Auto SLAM)
