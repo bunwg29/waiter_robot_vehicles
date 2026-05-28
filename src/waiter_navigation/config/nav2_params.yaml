@@ -183,7 +183,7 @@ global_costmap:
 map_server:
   ros__parameters:
     use_sim_time: true
-    yaml_filename: "/home/quanghuy/waiter_robot_vehicles/src/waiter_navigation/maps/restaurant.yaml"
+    yaml_filename: ""
 
 
 amcl:

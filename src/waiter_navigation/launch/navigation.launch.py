@@ -1,6 +1,5 @@
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument, GroupAction, IncludeLaunchDescription
-from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch.actions import DeclareLaunchArgument, GroupAction
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
 from launch_ros.actions import Node, SetParameter
 from launch_ros.descriptions import ParameterFile
@@ -10,7 +9,6 @@ from nav2_common.launch import RewrittenYaml
 
 def generate_launch_description():
     nav_pkg = FindPackageShare('waiter_navigation')
-    nav2_pkg = FindPackageShare('nav2_bringup')
 
     map_file = LaunchConfiguration('map')
     params_file = LaunchConfiguration('params_file')
@@ -33,21 +31,44 @@ def generate_launch_description():
         allow_substs=True,
     )
 
-    localization = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            PathJoinSubstitution([
-                nav2_pkg,
-                'launch',
-                'localization_launch.py'
-            ])
+    localization = GroupAction(actions=[
+        SetParameter('use_sim_time', use_sim_time),
+
+        Node(
+            package='nav2_map_server',
+            executable='map_server',
+            name='map_server',
+            output='screen',
+            parameters=[
+                configured_params,
+                {'yaml_filename': map_file},
+            ],
+            arguments=['--ros-args', '--log-level', log_level],
+            remappings=remappings,
         ),
-        launch_arguments={
-            'map': map_file,
-            'params_file': params_file,
-            'use_sim_time': use_sim_time,
-            'autostart': 'true',
-        }.items(),
-    )
+
+        Node(
+            package='nav2_amcl',
+            executable='amcl',
+            name='amcl',
+            output='screen',
+            parameters=[configured_params],
+            arguments=['--ros-args', '--log-level', log_level],
+            remappings=remappings,
+        ),
+
+        Node(
+            package='nav2_lifecycle_manager',
+            executable='lifecycle_manager',
+            name='lifecycle_manager_localization',
+            output='screen',
+            arguments=['--ros-args', '--log-level', log_level],
+            parameters=[
+                {'autostart': autostart},
+                {'node_names': ['map_server', 'amcl']},
+            ],
+        ),
+    ])
 
     lifecycle_nodes = [
         'controller_server',
