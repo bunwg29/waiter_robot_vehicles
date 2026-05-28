@@ -8,7 +8,6 @@ Nav2, AMCL, SLAM Toolbox, and a simple delivery task node.
 Run these commands from a new terminal:
 
 ```bash
-cd ~/waiter_robot_ws
 source /opt/ros/jazzy/setup.bash
 colcon build --symlink-install
 source install/setup.bash
